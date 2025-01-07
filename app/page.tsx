@@ -51,7 +51,7 @@ const QuizApp = () => {
 
 	const calculateScore = () => {
 		let correct = 0;
-		let total = questions.length;
+		const total = questions.length;
 		questions.forEach((q) => {
 			if (userAnswers[q.question_number] === q.correct_option) {
 				correct++;
@@ -218,7 +218,10 @@ const QuizApp = () => {
 										<div className='text-center space-y-6'>
 											<div className='relative inline-block'>
 												<div className='text-7xl font-bold'>
-													<span className={getScoreColor(score.percentage)}>
+													<span
+														className={getScoreColor(
+															parseFloat(score?.percentage)
+														)}>
 														{score.percentage}%
 													</span>
 												</div>
