@@ -1,0 +1,652 @@
+{
+	"questions": [
+		{
+			"question_number": 1,
+			"question_text": "Given the curves shown in the figures below, answer the following: The channel with the highest selectivity in the frequency domain is:",
+			"options": {
+				"a": "The curve colored with red",
+				"b": "The curve colored with green",
+				"c": "The curve colored with blue",
+				"d": "All of the above"
+			},
+			"correct_option": "b",
+			"needs_photo": true,
+			"photo_url": "images/questions/1.png",
+			"explanation": "Selectivity in the frequency domain refers to a channel's ability to differentiate between different frequencies. The green curve indicates the channel with the narrowest bandwidth, showcasing the highest selectivity by effectively distinguishing between closely spaced frequencies."
+		},
+		{
+			"question_number": 2,
+			"question_text": "Which of the following distribution is used when Line of Site (LOS) component is present in the received signal?",
+			"options": {
+				"a": "Rayleigh",
+				"b": "Gaussian",
+				"c": "Nakagami",
+				"d": "Ricean"
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "When a Line of Sight (LOS) component is present in the received signal, the Ricean distribution is used. This distribution accounts for both the direct LOS path and the multiple scattered paths, distinguishing it from Rayleigh which assumes no LOS component."
+		},
+		{
+			"question_number": 3,
+			"question_text": "Random access is more efficient than multiple access for short/infrequent data transmission.",
+			"options": {
+				"a": "False",
+				"b": "Don't know",
+				"c": "True",
+				"d": "Depends"
+			},
+			"correct_option": "c",
+			"needs_photo": false,
+			"explanation": "Random access methods, such as CSMA, are more efficient for scenarios involving short or infrequent data transmissions because they allow users to access the channel as needed without the overhead of scheduling, reducing latency and resource usage."
+		},
+		{
+			"question_number": 4,
+			"question_text": "Given the curves shown in the figures below, answer the following: The channel with the largest coherence bandwidth is:",
+			"options": {
+				"a": "The curve colored with red",
+				"b": "The curve colored with green",
+				"c": "The curve colored with blue",
+				"d": "All of the above"
+			},
+			"correct_option": "a",
+			"needs_photo": true,
+			"photo_url": "images/questions/4.png",
+			"explanation": "Coherence bandwidth indicates the range of frequencies over which the channel response is relatively flat. The red curve shows the broadest flat region in the frequency domain, representing the largest coherence bandwidth."
+		},
+		{
+			"question_number": 5,
+			"question_text": "The difference between random access and scheduled multiple access is",
+			"options": {
+				"a": "Don't know",
+				"b": "None of the above",
+				"c": "In random access, users access channel randomly whenever they have data to send (e.g., CSMA), whereas in scheduled access, users are instructed by a central controller to access the channel at specific time slots to avoid interference (e.g, TDMA).",
+				"d": "In scheduled access, users access channel randomly whenever they have data to send (e.g., CSMA), whereas in random access, users are instructed by a central controller to access the channel at specific time to avoid interference (e.g, TDMA)."
+			},
+			"correct_option": "c",
+			"needs_photo": false,
+			"explanation": "Random access methods allow users to transmit whenever they have data, which is efficient for sporadic transmissions but may lead to collisions. Scheduled access methods allocate specific time slots to users, preventing collisions and ensuring orderly access, suitable for consistent data transmission."
+		},
+		{
+			"question_number": 6,
+			"question_text": "Which of the following belong to the design issues of OFDM?",
+			"options": {
+				"a": "Sensitivity to time and frequency offset",
+				"b": "All the above",
+				"c": "High side lobes leading to out of band (OOB) emission or leakage",
+				"d": "Peak to average power ratio (PAPR) increase"
+			},
+			"correct_option": "b",
+			"needs_photo": false,
+			"explanation": "OFDM design issues include sensitivity to time and frequency offsets which can cause inter-carrier interference, high side lobes resulting in out-of-band emissions, and increased peak-to-average power ratio (PAPR) which can affect power efficiency."
+		},
+		{
+			"question_number": 7,
+			"question_text": "The optimal use-case of antennas in MIMO systems is always multiplexing not diversity.",
+			"options": {
+				"a": "Don't know",
+				"b": "True",
+				"c": "Depends",
+				"d": "False"
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "This statement is false. In MIMO systems, antennas can be optimally used for both spatial multiplexing, which increases data rates, and diversity, which enhances reliability. The optimal use depends on the specific requirements of the communication scenario."
+		},
+		{
+			"question_number": 8,
+			"question_text": "Suppose you have two users using the same application, but one is near to the base station tower, and the other is very far, then what modulation schemes would you use for these users to better serve them?",
+			"options": {
+				"a": "BPSK for near-user and 16-QAM for far-user",
+				"b": "BPSK for far-user and 16-QAM for near-user",
+				"c": "8-QAM for near-user and 16-QAM for far-user",
+				"d": "8-QAM for far-user and 16-QAM for near-user"
+			},
+			"correct_option": "b",
+			"needs_photo": false,
+			"explanation": "Using BPSK for the far user provides a more robust modulation scheme suitable for weaker signals, while 16-QAM offers higher data rates for the near user with stronger signal conditions."
+		},
+		{
+			"question_number": 9,
+			"question_text": "Under what condition we have a fast fading channel (time selective fading or frequency dispersion)",
+			"options": {
+				"a": "Signal Bandwidth > Coherence Bandwidth",
+				"b": "Signal Bandwidth < Coherence Bandwidth",
+				"c": "Coherence time > Symbol period",
+				"d": "Coherence time < Symbol Period"
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "A fast fading channel occurs when the coherence time (the time duration over which the channel's characteristics are relatively constant) is shorter than the symbol period, causing rapid fluctuations in the signal."
+		},
+		{
+			"question_number": 10,
+			"question_text": "Having flat fading channels over the subcarriers of OFDM is very essential because it reduces the equalization complexity and makes it a very easy process. To achieve that, the subcarrier spacing must be smaller than the coherence bandwidth of the time dispersive channel.",
+			"options": {
+				"a": "True",
+				"b": "Depends",
+				"c": "False",
+				"d": "Don't know"
+			},
+			"correct_option": "a",
+			"needs_photo": false,
+			"explanation": "True. Ensuring that the subcarrier spacing in OFDM is smaller than the channel's coherence bandwidth allows each subcarrier to experience flat fading, simplifying equalization as each subcarrier can be treated independently."
+		},
+		{
+			"question_number": 11,
+			"question_text": "MIMO receiver design usually trades complexity for performance.",
+			"options": {
+				"a": "Don't know",
+				"b": "Depends",
+				"c": "False",
+				"d": "True"
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "True. Advanced MIMO receiver designs, such as Maximum Likelihood detectors, offer better performance but at the cost of increased computational complexity. Designers often balance complexity and performance based on system requirements."
+		},
+		{
+			"question_number": 12,
+			"question_text": "Scheduled access guaranties high QoS by avoiding collision, but requires extensive signaling.",
+			"options": {
+				"a": "False",
+				"b": "Depends",
+				"c": "Don't know",
+				"d": "True"
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "True. Scheduled access methods, like TDMA, ensure high Quality of Service (QoS) by allocating specific time slots to users, preventing collisions. However, this approach necessitates extensive signaling for coordination and scheduling."
+		},
+		{
+			"question_number": 13,
+			"question_text": "Statistical scattering function, which gives the average power for a given multipath delay and doppler channel, can be found by",
+			"options": {
+				"a": "calculating the Fourier transform of the cross-correlation function between time-varying impulse response and frequency response.",
+				"b": "calculating the inverse Fourier transform of the autocorrelation function for time-varying impulse response.",
+				"c": "calculating the inverse Fourier transform of the cross-correlation function for time-varying impulse response and frequency response.",
+				"d": "calculating the Fourier transform of the autocorrelation function for time-varying impulse response."
+			},
+			"correct_option": "b",
+			"needs_photo": false,
+			"explanation": "The statistical scattering function is obtained by taking the inverse Fourier transform of the autocorrelation function of the time-varying impulse response. This provides the average power distribution over multipath delays and Doppler shifts."
+		},
+		{
+			"question_number": 14,
+			"question_text": "Adaptive modulation in wireless communication is",
+			"options": {
+				"a": "A method that can provide optimal data rates for different channel qualities or applications requirements.",
+				"b": "A method used for modifying the transmission parameters according to the application requirements to improve performance.",
+				"c": "All the above",
+				"d": "A method used for changing the transmission parameters according to the large- and small-scale fading channel conditions to improve performance."
+			},
+			"correct_option": "c",
+			"needs_photo": false,
+			"explanation": "Adaptive modulation encompasses all the listed aspects. It dynamically adjusts transmission parameters like modulation schemes based on varying channel conditions and application requirements to optimize data rates and performance."
+		},
+		{
+			"question_number": 15,
+			"question_text": "The most complex MIMO receiver design, which provides the best performance, is",
+			"options": {
+				"a": "Sphere detector",
+				"b": "Linear detector such as zero forcing (ZF)",
+				"c": "Maximum Likelihood (ML) detector",
+				"d": "None of the above"
+			},
+			"correct_option": "c",
+			"needs_photo": false,
+			"explanation": "Maximum Likelihood (ML) detectors offer the best performance in MIMO systems by exhaustively searching for the most likely transmitted signal. However, this comes at the cost of high computational complexity compared to other detectors."
+		},
+		{
+			"question_number": 16,
+			"question_text": "What do we mean by saying \"wide sense stationary (WSS) process\"?",
+			"options": {
+				"a": "mean is zero, and autocorrelation function is independent of time (depends only on time difference)",
+				"b": "mean is unity, and autocorrelation function is independent of time (depends only on time difference)",
+				"c": "mean is zero, and autocorrelation function is dependent on time (depends on instantaneous time instances)",
+				"d": "mean is unity, and autocorrelation function is dependent on time (depends on instantaneous time instances)"
+			},
+			"correct_option": "a",
+			"needs_photo": false,
+			"explanation": "A wide sense stationary (WSS) process has a constant mean (which can be zero) and an autocorrelation function that depends only on the time difference between two points, not on the actual time instances."
+		},
+		{
+			"question_number": 17,
+			"question_text": "Given the curves shown in the figures below, answer the following: The channel with the highest selectivity in the time domain is:",
+			"options": {
+				"a": "The curve colored with red",
+				"b": "The curve colored with blue",
+				"c": "Both the curve colored with blue and that with red",
+				"d": "None of the above"
+			},
+			"correct_option": "b",
+			"needs_photo": true,
+			"photo_url": "images/questions/17.png",
+			"explanation": "Time domain selectivity relates to how the channel differentiates between different time delays. The blue curve indicates the channel with the highest selectivity by showing the most distinct multipath components with minimal overlap."
+		},
+		{
+			"question_number": 18,
+			"question_text": "Capacity of fading MIMO systems is always optimal.",
+			"options": {
+				"a": "Don't know",
+				"b": "False",
+				"c": "True",
+				"d": "Depends"
+			},
+			"correct_option": "b",
+			"needs_photo": false,
+			"explanation": "False. While MIMO systems can significantly enhance capacity, achieving optimal capacity depends on factors like channel state information, antenna configuration, and signal processing techniques. Practical limitations often prevent reaching theoretical optimal capacity."
+		},
+		{
+			"question_number": 19,
+			"question_text": "What is the key difference between the main two types of spread spectrum modulation: frequency hopping (FHSS) and direction sequence (DSSS)?",
+			"options": {
+				"a": "Don't know",
+				"b": "In DSSS, a narrowband signal is hopped over wide bandwidth, making it difficult to track the signal, whereas in FHSS, the modulated signal is multiplied by faster chip sequence, resulting in hiding the signal below the noise level.",
+				"c": "In FHSS, a narrowband signal is hopped over wide bandwidth, making it difficult to track the signal, whereas in DSSS, the modulated signal is multiplied by faster chip sequence, resulting in hiding the signal below the noise level.",
+				"d": "None of the above."
+			},
+			"correct_option": "c",
+			"needs_photo": false,
+			"explanation": "The key difference is that Frequency Hopping Spread Spectrum (FHSS) rapidly switches the carrier frequency among many frequency channels, making the signal hard to intercept, while Direct Sequence Spread Spectrum (DSSS) spreads the signal by multiplying it with a pseudorandom code, reducing its power spectral density and hiding it below noise levels."
+		},
+		{
+			"question_number": 20,
+			"question_text": "Diversity in wireless communication means",
+			"options": {
+				"a": "Receiving the same signal from independent paths to enhance reliability",
+				"b": "Sending or receiving the same signal over or from correlated (dependent) paths",
+				"c": "Sending the same signal over independent paths to improve reliability.",
+				"d": "Sending or receiving the same signal over or from independent paths to improve reliability performance by reducing fading effect."
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "Diversity techniques involve sending or receiving the same signal over multiple independent paths (time, frequency, spatial) to mitigate the effects of fading and improve reliability by ensuring that at least some copies of the signal are received with good quality."
+		},
+		{
+			"question_number": 21,
+			"question_text": "The model represented in the mathematical formula given below is called [formula shows time-varying channel model with phase calculation]",
+			"options": {
+				"a": "time-varying impulse response",
+				"b": "slow fading response",
+				"c": "frequency response",
+				"d": "flat fading response"
+			},
+			"correct_option": "a",
+			"needs_photo": true,
+			"photo_url": "images/questions/21.png",
+			"explanation": "A time-varying impulse response model represents how the channel's characteristics change over time, including variations in amplitude and phase, capturing the dynamic nature of the wireless environment."
+		},
+		{
+			"question_number": 22,
+			"question_text": "Beamforming transforms MIMO system into a SISO system with TX and RX diversity.",
+			"options": {
+				"a": "False",
+				"b": "Don't know",
+				"c": "Depends",
+				"d": "True"
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "True. Beamforming in MIMO systems directs the signal energy towards the intended receiver, effectively creating a Single Input Single Output (SISO) channel while leveraging multiple transmit and receive antennas to achieve diversity gains."
+		},
+		{
+			"question_number": 23,
+			"question_text": "Which of the following is true regarding spread spectrum modulation?",
+			"options": {
+				"a": "It mitigates narrowband interference/jamming and ISI by using rake receiver",
+				"b": "All the above",
+				"c": "It spreads modulated signal over wider bandwidth than needed for transmission",
+				"d": "It can be used as a multiple access technique"
+			},
+			"correct_option": "b",
+			"needs_photo": false,
+			"explanation": "All the statements are true. Spread spectrum modulation spreads the signal over a wider bandwidth, enhances resistance to interference and jamming, reduces inter-symbol interference (ISI) when combined with techniques like rake receivers, and supports multiple access by allowing multiple users to share the same frequency band."
+		},
+		{
+			"question_number": 24,
+			"question_text": "Example on a diversity technique that exploits time domain in wireless transmission is",
+			"options": {
+				"a": "Alamouti coding or space time block coding (STBC)",
+				"b": "Coordinated multiple points (CoMP)",
+				"c": "Frequency hopping spread spectrum (FHSS)",
+				"d": "Automatic repeat request (ARQ)"
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "Automatic Repeat reQuest (ARQ) is a time-domain diversity technique where erroneous packets are retransmitted, leveraging time diversity to improve reliability by providing multiple chances for correct reception."
+		},
+		{
+			"question_number": 25,
+			"question_text": "One of the ways to overcome Inter-symbol interference (ISI) problem, which is usually caused by multi-path dispersive channels, is to use",
+			"options": {
+				"a": "Combination",
+				"b": "Equalization",
+				"c": "Encoding and decoding",
+				"d": "None of the above"
+			},
+			"correct_option": "b",
+			"needs_photo": false,
+			"explanation": "Equalization involves processing the received signal to counteract the effects of ISI caused by multi-path propagation, thereby restoring the integrity of the transmitted symbols."
+		},
+		{
+			"question_number": 26,
+			"question_text": "The key difference between wideband and narrowband channels is",
+			"options": {
+				"a": "time difference between multipath components in wideband exceeds 1/signal bandwidth, while narrowband doesn't",
+				"b": "time difference between multipath components in wideband exceeds signal period, while narrowband doesn't",
+				"c": "The ratio of the time difference between multipath components to signal period is much greater than unity in wideband, while narrowband isn't",
+				"d": "All of the above"
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "All the listed statements correctly describe the differences between wideband and narrowband channels. Wideband channels have multipath delays that exceed the inverse of the signal bandwidth and the signal period, leading to frequency-selective fading, whereas narrowband channels do not."
+		},
+		{
+			"question_number": 27,
+			"question_text": "Given the curves shown in the figures below, answer the following: The channel that causes the lowest inter-carrier interference is:",
+			"options": {
+				"a": "Both the curve colored with blue and that with red",
+				"b": "The curve colored with red",
+				"c": "The curve colored with blue",
+				"d": "None of the above"
+			},
+			"correct_option": "b",
+			"needs_photo": true,
+			"photo_url": "images/questions/27.png",
+			"explanation": "Inter-carrier interference (ICI) is minimized when the channel has minimal frequency selectivity. The red curve indicates a channel with broader coherence bandwidth, reducing ICI by ensuring each subcarrier experiences flat fading."
+		},
+		{
+			"question_number": 28,
+			"question_text": "OFDM is a spectrum-efficient transmission method that overlaps orthogonal subcarriers and can avoid ISI by using cyclic prefix as a guard period of length greater than the channel delay spread.",
+			"options": {
+				"a": "Don't know",
+				"b": "True",
+				"c": "False",
+				"d": "Depends"
+			},
+			"correct_option": "b",
+			"needs_photo": false,
+			"explanation": "True. OFDM efficiently utilizes the spectrum by overlapping orthogonal subcarriers and employs a cyclic prefix to absorb ISI caused by multi-path delays, provided the cyclic prefix duration exceeds the channel's delay spread."
+		},
+		{
+			"question_number": 29,
+			"question_text": "Given the curves shown in the figures below, answer the following: The channel that corresponds to the largest speed or mobility in the system is:",
+			"options": {
+				"a": "The curve colored with red",
+				"b": "The curve colored with blue",
+				"c": "Both the curve colored with blue and that with red",
+				"d": "None of the above"
+			},
+			"correct_option": "b",
+			"needs_photo": true,
+			"photo_url": "images/questions/29.png",
+			"explanation": "A channel associated with higher mobility exhibits larger Doppler spread due to faster changes in the channel characteristics. The blue curve represents such a channel with greater Doppler spread, indicating higher user speed or mobility."
+		},
+		{
+			"question_number": 30,
+			"question_text": "Diversity in wireless communication can exist in",
+			"options": {
+				"a": "Time domain only",
+				"b": "Frequency (spectrum) domain only",
+				"c": "Time, frequency, space, polarization, angle, and site",
+				"d": "Space domain only"
+			},
+			"correct_option": "c",
+			"needs_photo": false,
+			"explanation": "Diversity can be exploited across multiple domains including time, frequency, space, polarization, angle, and site. This multi-domain diversity enhances reliability by mitigating different types of fading and signal impairments."
+		},
+		{
+			"question_number": 31,
+			"question_text": "Suppose you want to serve a user device with very high reliability (i.e., low BER), then what modulation scheme would you use among the following?",
+			"options": {
+				"a": "BPSK",
+				"b": "64-QAM",
+				"c": "QPSK",
+				"d": "16-QAM"
+			},
+			"correct_option": "a",
+			"needs_photo": false,
+			"explanation": "BPSK (Binary Phase Shift Keying) is the most robust modulation scheme among the options, offering the lowest Bit Error Rate (BER) due to its simple two-phase signaling, making it ideal for high-reliability applications."
+		},
+		{
+			"question_number": 33,
+			"question_text": "Under what condition we have a slow fading channel",
+			"options": {
+				"a": "Coherence time > Symbol Period",
+				"b": "Coherence time < Symbol period",
+				"c": "Signal Bandwidth < Coherence Bandwidth",
+				"d": "Signal Bandwidth > Coherence Bandwidth"
+			},
+			"correct_option": "a",
+			"needs_photo": false,
+			"explanation": "A slow fading channel is characterized by a coherence time that exceeds the symbol period, meaning the channel conditions remain relatively constant over the duration of multiple symbol transmissions."
+		},
+		{
+			"question_number": 34,
+			"question_text": "Under what condition we have a flat fading channel",
+			"options": {
+				"a": "Signal Bandwidth < Coherence Bandwidth of Channel or Delay Spread < Symbol Period",
+				"b": "Signal Bandwidth < Coherence Bandwidth of Channel or Delay Spread > Symbol Period",
+				"c": "Signal Bandwidth > Coherence Bandwidth of Channel or Delay Spread > Symbol Period",
+				"d": "Signal Bandwidth > Coherence Bandwidth of Channel or Delay Spread < Symbol Period"
+			},
+			"correct_option": "a",
+			"needs_photo": false,
+			"explanation": "A flat fading channel occurs when the signal bandwidth is less than the channel's coherence bandwidth or the delay spread is less than the symbol period, resulting in uniform fading across the entire signal bandwidth."
+		},
+		{
+			"question_number": 35,
+			"question_text": "Suppose you have a user using two different applications: video, and messaging, then what modulation schemes would you use for these applications to better serve them?",
+			"options": {
+				"a": "64-PSK for video and 16-QAM for messaging",
+				"b": "64-QAM for messaging and 16-QAM for video",
+				"c": "BPSK for messaging and 64-QAM for video",
+				"d": "BPSK for video and 64-QAM for messaging"
+			},
+			"correct_option": "c",
+			"needs_photo": false,
+			"explanation": "For high reliability required by messaging (low BER), BPSK is suitable. For high data rates required by video, 64-QAM offers higher spectral efficiency, making option c the optimal choice."
+		},
+		{
+			"question_number": 36,
+			"question_text": "Given the curves shown in the figures below, answer the following: The channel with the largest Doppler spread is:",
+			"options": {
+				"a": "The curve colored with red",
+				"b": "The curve colored with blue",
+				"c": "Both the curve colored with blue and that with red",
+				"d": "None of the above"
+			},
+			"correct_option": "b",
+			"needs_photo": true,
+			"photo_url": "images/questions/36.png",
+			"explanation": "Doppler spread is indicative of the frequency variation due to mobility. The blue curve shows a wider spread, representing a channel with higher Doppler spread, associated with higher mobility or speed."
+		},
+		{
+			"question_number": 37,
+			"question_text": "Given the curves shown in the figures below, answer the following: The channel with the largest coherence time is:",
+			"options": {
+				"a": "The curve colored with red",
+				"b": "The curve colored with blue",
+				"c": "Both the curve colored with blue and that with red",
+				"d": "None of the above"
+			},
+			"correct_option": "a",
+			"needs_photo": true,
+			"photo_url": "images/questions/37.png",
+			"explanation": "Coherence time measures how long the channel remains stable. The red curve demonstrates a longer coherence time, indicating more stable channel conditions over time compared to the blue curve."
+		},
+		{
+			"question_number": 38,
+			"question_text": "Given the curves shown in the figures below, answer the following: The channel that causes the lowest inter-symbol interference is:",
+			"options": {
+				"a": "The curve colored with red",
+				"b": "The curve colored with green",
+				"c": "The curve colored with blue",
+				"d": "All of the above"
+			},
+			"correct_option": "b",
+			"needs_photo": true,
+			"photo_url": "images/questions/38.png",
+			"explanation": "Low inter-symbol interference (ISI) is achieved when the channel has minimal delay spread. The green curve indicates the smallest delay spread, resulting in the lowest ISI among the presented channels."
+		},
+		{
+			"question_number": 39,
+			"question_text": "Central limit theorem (CLT) in wireless signal propagation states that the summation of large number of random multi-path signals results in a distribution called",
+			"options": {
+				"a": "Nakagami",
+				"b": "Rayleigh",
+				"c": "Ricean",
+				"d": "Gaussian"
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "According to the Central Limit Theorem, the sum of a large number of independent random variables tends toward a Gaussian distribution, regardless of the original distribution of the variables."
+		},
+		{
+			"question_number": 40,
+			"question_text": "Suppose you want to serve a user device with very high data rates, then what modulation scheme would you use among the following?",
+			"options": {
+				"a": "16-QAM",
+				"b": "QPSK",
+				"c": "BPSK",
+				"d": "64-QAM"
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "64-QAM (Quadrature Amplitude Modulation) offers higher spectral efficiency and higher data rates compared to lower-order modulations like BPSK or QPSK, making it suitable for applications requiring very high data rates."
+		},
+		{
+			"question_number": 41,
+			"question_text": "Providing diversity comes at the cost of",
+			"options": {
+				"a": "Wasting some resources in time, frequency, or space that we could have used to send information. Thus, it reduces transmission rate.",
+				"b": "Increasing complexity and processing time.",
+				"c": "Reducing spectral efficiency",
+				"d": "All the above"
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "All the listed options are costs associated with implementing diversity techniques. They require additional resources, increase system complexity, and can lead to reduced spectral efficiency due to the overhead involved."
+		},
+		{
+			"question_number": 42,
+			"question_text": "Given the curves shown in the figures below, answer the following: The channel with the largest time dispersion or delay spread is:",
+			"options": {
+				"a": "The curve colored with red",
+				"b": "The curve colored with green",
+				"c": "The curve colored with blue",
+				"d": "All of the above"
+			},
+			"correct_option": "b",
+			"needs_photo": true,
+			"photo_url": "images/questions/42.png",
+			"explanation": "Time dispersion or delay spread refers to the spread of signal arrival times due to multipath. The green curve shows the widest spread in the time domain, indicating the largest delay spread among the channels."
+		},
+		{
+			"question_number": 43,
+			"question_text": "Under what condition we have a frequency selective fading channel (time dispersion)",
+			"options": {
+				"a": "Signal Bandwidth > Coherence Bandwidth of Channel or Delay Spread > Symbol Period.",
+				"b": "Signal Bandwidth < Coherence Bandwidth of Channel or Delay Spread > Symbol Period.",
+				"c": "Signal Bandwidth > Coherence Bandwidth of Channel or Delay Spread > Symbol Period",
+				"d": "Signal Bandwidth > Coherence Bandwidth of Channel or Delay Spread < Symbol Period."
+			},
+			"correct_option": "a",
+			"needs_photo": false,
+			"explanation": "A frequency-selective fading channel occurs when the signal bandwidth exceeds the channel's coherence bandwidth or when the delay spread surpasses the symbol period, causing different frequency components to fade differently."
+		},
+		{
+			"question_number": 44,
+			"question_text": "OFDM uses IFFT at the TX (transmitter) and FFT at the RX (receiver) and performs channel equalization in the frequency domain.",
+			"options": {
+				"a": "Depends",
+				"b": "Don't know",
+				"c": "False",
+				"d": "True"
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "True. OFDM employs Inverse Fast Fourier Transform (IFFT) at the transmitter to create orthogonal subcarriers and Fast Fourier Transform (FFT) at the receiver to demodulate them. Channel equalization is efficiently performed in the frequency domain for each subcarrier."
+		},
+		{
+			"question_number": 45,
+			"question_text": "Given the curves shown in the figures below, answer the following: The channel that corresponds to the largest number of multipaths and distance between transmitter and receiver is:",
+			"options": {
+				"a": "The curve colored with red",
+				"b": "The curve colored with green",
+				"c": "The curve colored with blue",
+				"d": "All of the above"
+			},
+			"correct_option": "b",
+			"needs_photo": true,
+			"photo_url": "images/questions/45.png",
+			"explanation": "A channel with a larger number of multipaths and greater distance typically exhibits more complex multipath profiles. The green curve represents such a channel with numerous delayed and attenuated paths due to extensive scattering and propagation distance."
+		},
+		{
+			"question_number": 46,
+			"question_text": "In multi-user channels, MAC (multiaccess channel) is different from BC (broadcasting channel) in the sense that",
+			"options": {
+				"a": "MAC is used with TDD, whereas BC is used with FDD",
+				"b": "BC occurs in the uplink to receive multiple users' signals by a single receiver, whereas MAC happens in the downlink to serve multiple users by a single transmitter.",
+				"c": "MAC is used with FDD, whereas BC is used with TDD",
+				"d": "MAC occurs in the uplink to receive multiple users' signals by a single receiver, whereas BC happens in the downlink to serve multiple users by a single transmitter."
+			},
+			"correct_option": "d",
+			"needs_photo": false,
+			"explanation": "In multi-user communications, the Multiple Access Channel (MAC) refers to the uplink where multiple users transmit to a single receiver, while the Broadcast Channel (BC) refers to the downlink where a single transmitter sends data to multiple receivers."
+		},
+		{
+			"question_number": 47,
+			"question_text": "An example on a non-linear equalizer, which takes into consideration involving the previously detected symbols during its detection process, is",
+			"options": {
+				"a": "Zero forcing (ZF)",
+				"b": "None of the above",
+				"c": "Decision feedback equalizer (DFE)",
+				"d": "Minimum mean square error (MMSE)"
+			},
+			"correct_option": "c",
+			"needs_photo": false,
+			"explanation": "A Decision Feedback Equalizer (DFE) is a non-linear equalizer that uses previously detected symbols to cancel ISI, improving performance by mitigating interference based on past decisions."
+		},
+		{
+			"question_number": 48,
+			"question_text": "Combining techniques at the receiver are very essential in order to benefit from diversity. Which of the following techniques can provide the best reliability performance?",
+			"options": {
+				"a": "Equal Gain Combining (EGC)",
+				"b": "Cognitive combining (CC)",
+				"c": "Maximal Ratio Combining (MRC)",
+				"d": "Selection Combining (SC)"
+			},
+			"correct_option": "c",
+			"needs_photo": false,
+			"explanation": "Maximal Ratio Combining (MRC) provides the best reliability by weighting each received signal proportionally to its signal-to-noise ratio (SNR) and then summing them, maximizing the combined SNR."
+		},
+		{
+			"question_number": 49,
+			"question_text": "In pure ALOHA, collision occurs for any partial overlap between packets, but in slotted ALOAH, collision occurs only when packets fully overlap, where Packets received in error are retransmitted after random delay interval.",
+			"options": {
+				"a": "False",
+				"b": "True",
+				"c": "Depends",
+				"d": "Don't know"
+			},
+			"correct_option": "b",
+			"needs_photo": false,
+			"explanation": "True. In pure ALOHA, any overlapping transmissions result in collisions. Slotted ALOHA divides time into discrete slots, reducing the collision probability by allowing collisions only when packets fully overlap, thus improving efficiency."
+		},
+		{
+			"question_number": 50,
+			"question_text": "Examples on orthogonal multiple accessing techniques are",
+			"options": {
+				"a": "All the above",
+				"b": "FDMA (used in 1G) and TDMA (used in 2G)",
+				"c": "CDMA (used in 3G) and OFDMA (used in 4G)",
+				"d": "SDMA and hybrid schemes such as CDMA with OFDMA"
+			},
+			"correct_option": "a",
+			"needs_photo": false,
+			"explanation": "All the listed options are examples of orthogonal multiple access techniques. FDMA and TDMA are used in earlier generations, while CDMA and OFDMA are utilized in more recent technologies. SDMA and hybrid schemes also employ orthogonal principles to allow multiple users to access the channel simultaneously without interference."
+		}
+	]
+}
